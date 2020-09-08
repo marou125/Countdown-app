@@ -1,5 +1,6 @@
 package com.example.countdown
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -14,7 +15,8 @@ class MainActivity : AppCompatActivity() {
 
         val fab: View = findViewById(R.id.floatingActionButton)
         fab.setOnClickListener{view ->
-            
+            intent = Intent(this, EventDetails::class.java)
+            startActivity(intent)
         }
 
     }
