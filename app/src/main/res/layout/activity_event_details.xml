@@ -10,15 +10,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            style="@style/AddEvent"
-            android:text="@string/event_name"/>
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
 
         <EditText
-            android:layout_width="0dp"
-            android:layout_weight="2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/event_name_hint"
             android:inputType="text"
@@ -31,11 +27,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <TextView
-            style="@style/AddEvent"
-            android:text="@string/event_date"/>
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
+
+    <!--TODO: Zeitangabe hinzufügen -->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,6 +43,8 @@
         <TextView
             style="@style/AddEvent"
             android:text="@string/event_time" />
+
+
 
     </LinearLayout>
 
